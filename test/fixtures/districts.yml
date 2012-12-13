@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  food: 1
+  clothing: 1
+  medicine: 1
+  fuel: 1
+
+two:
+  name: MyString
+  food: 1
+  clothing: 1
+  medicine: 1
+  fuel: 1

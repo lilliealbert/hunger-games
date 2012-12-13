@@ -1,0 +1,26 @@
+<h3>Game Maker View</h3>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Food</th>
+    <th>Clothing</th>
+    <th>Medicine</th>
+    <th>Fuel</th>
+    <th></th>
+  </tr>
+
+<% @districts.each do |district| %>
+  <tr>
+    <td><%= district.name %></td>
+    <td><%= district.food %></td>
+    <td><%= district.clothing %></td>
+    <td><%= district.medicine %></td>
+    <td><%= district.fuel %></td>
+    <td><%= link_to 'Edit', edit_district_path(district) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New District', new_district_path %>

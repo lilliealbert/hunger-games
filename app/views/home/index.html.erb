@@ -1,0 +1,21 @@
+<table class="table">
+  <tr>
+    <th>DISTRICT</th>
+    <th>FOOD</th>
+    <th>CLOTHING</th>
+    <th>MEDICINE</th>
+    <th>FUEL</th>
+    <th>TOTAL</th>
+  </tr>
+
+<% @districts.sort_by{|d| (d.fuel + d.food + d.clothing + d.medicine).size}.reverse.each do |district| %>
+  <tr>
+    <td><%= district.name %></td>
+    <td><%= district.food %></td>
+    <td><%= district.clothing %></td>
+    <td><%= district.medicine %></td>
+    <td><%= district.fuel %></td>
+    <td><%= district.fuel + district.food + district.clothing + district.medicine %></td>
+  </tr>
+<% end %>
+</table>
