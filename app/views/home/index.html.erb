@@ -8,7 +8,6 @@
     <th>TOTAL</th>
   </tr>
 
-
 <% @districts.sort_by{|d| d.total_resources}.reverse.each do |district| %>
   <tr>
     <td><%= district.name %></td>
