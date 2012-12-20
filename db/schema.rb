@@ -15,12 +15,12 @@ ActiveRecord::Schema.define(:version => 20121213215520) do
 
   create_table "districts", :force => true do |t|
     t.string   "name"
-    t.integer  "food"
-    t.integer  "clothing"
-    t.integer  "medicine"
-    t.integer  "fuel"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "food",       :default => 0
+    t.integer  "clothing",   :default => 0
+    t.integer  "medicine",   :default => 0
+    t.integer  "fuel",       :default => 0
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
 end
