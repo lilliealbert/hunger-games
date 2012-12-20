@@ -28,3 +28,9 @@ img {
 a:visited {
 	color: #F7F7E9;
 }
+
+td {
+	font-family: 'Monda', sans-serif;
+  	font-size: 18px;
+  	line-height: 24px;
+}
