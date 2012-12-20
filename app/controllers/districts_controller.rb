@@ -1,6 +1,8 @@
 class DistrictsController < ApplicationController
   # GET /districts
   # GET /districts.json
+  before_filter :authenticate, :except => [:index, :show]
+
   def index
     @districts = District.all
 
@@ -9,8 +11,6 @@ class DistrictsController < ApplicationController
       format.json { render json: @districts }
     end
   end
-
-  
 
   # GET /districts/1
   # GET /districts/1.json
